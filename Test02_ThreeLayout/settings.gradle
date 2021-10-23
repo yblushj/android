@@ -1,2 +1,5 @@
+include ':tablelayout'
+include ':constraintlayout'
+include ':linearlayout'
 include ':app'
-rootProject.name = "Test02_ThreeLayout"
+rootProject.name = "My First App"
