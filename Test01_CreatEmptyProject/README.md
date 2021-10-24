@@ -8,5 +8,5 @@
 ###   3、创建Android工程并同步到GitHub
 * 命令行的方式通过git同步：https://blog.csdn.net/fjnu_se/article/details/66472625
 ####  3.1、创建一个Android工程
-![alt](../Test03_ThreeLayout/pics/linearlayout.jpg)
+![alt](../Test02_ThreeLayout/pics/LinearLayout.jpg)
        
