@@ -6,7 +6,7 @@
 ###   2、下载Android Studio
 * Android Studio官网：https://developer.android.google.cn/studio?hl=zh-cn
 ###   3、创建Android工程并同步到GitHub
-(1) 第一次使用Android Studio的话，打开软件后，选择“Creat New Project”就可以创建了。
+(1) 第一次使用Android Studio的话，打开软件后，选择“Creat New Project”就可以创建了。<hr/>
 如果是之前创建过安卓项目，想要再次创建的话，点击左上角“File”
 详细过程参考以下链接：
 * 命令行的方式通过git同步：https://blog.csdn.net/fjnu_se/article/details/66472625
