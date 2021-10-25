@@ -18,9 +18,10 @@
 * 如果“push”不成功的话，输入“git pull origin master”即可。
 * 如果出现以下情况：
 <img src="https://z3.ax1x.com/2021/10/25/5hhkp4.png" width=500>
-输入“git remote add origin git@github.com:用户名/仓库名.git”，然后重新“push”即可。<br/>
+输入“git remote add origin git@github.com:用户名/仓库名.git”，然后重新“push”即可。
 (3) 详细过程参考以下链接：
 * 命令行的方式通过git同步：https://blog.csdn.net/fjnu_se/article/details/66472625
+
 ### 4、我的“.gitignore”文件
 ```xml
 *.iml
@@ -38,3 +39,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+```
+## 二、参考链接
+* https://www.twle.cn/l/yufei/android/android-basic-index.html
+* https://developer.android.google.cn/guide
