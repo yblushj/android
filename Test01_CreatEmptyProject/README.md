@@ -1,7 +1,7 @@
 # 实验1_Android开发基础
 ## 一、创建第一个Android工程并同步至GitHub
 ### 1、注册一个GitHub账号，安装Git工具
-* GitHub官网：ghttps://github.com/fjnu-cse
+* GitHub官网：https://github.com/
 * Git官网：https://github.com/fjnu-cse
 ### 2、下载Android Studio
 * Android Studio官网：https://developer.android.google.cn/studio?hl=zh-cn
@@ -20,7 +20,7 @@
 <img src="https://z3.ax1x.com/2021/10/25/5hhkp4.png" width=500>
 输入“git remote add origin git@github.com:用户名/仓库名.git”，然后重新“push”即可。<br/>
 (3) 详细过程参考以下链接：
-* 命令行的方式通过git同步：https://blog.csdn.net/fjnu_se/article/details/66472625 <br/>
+* 命令行的方式通过git同步：https://blog.csdn.net/fjnu_se/article/details/66472625
 ### 4、我的“.gitignore”文件
 ```xml
 *.iml
