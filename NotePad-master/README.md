@@ -193,15 +193,114 @@ public class NoteSearch extends Activity implements SearchView.OnQueryTextListen
 * 效果展示
 
 ![image](https://user-images.githubusercontent.com/82711644/143720691-bb171a64-f5aa-4e92-9312-2d83deb1e4e6.png)
+
 ![image](https://user-images.githubusercontent.com/82711644/143720698-96f1178f-d991-4b8d-a109-6ba7e9b3f5df.png)
+
 ![image](https://user-images.githubusercontent.com/82711644/143720708-b04910f9-4aeb-4092-957e-748ec7332454.png)
 
 ## 二、拓展功能
 ### 1、UI美化
+* 界面展示美化
+
+![image](https://user-images.githubusercontent.com/82711644/143720755-6ce63009-ca49-4352-bff6-e2bfb9fdb076.png)
+* 图标美化
+
+![image](https://user-images.githubusercontent.com/82711644/143720768-4e77a654-a946-46b8-ab31-9edb25f0916f.png)
+
+![image](https://user-images.githubusercontent.com/82711644/143720779-6645d288-88ac-463e-82af-204e551e4d5f.png)
+
+![image](https://user-images.githubusercontent.com/82711644/143720783-5709b5f0-fd10-4e27-bcf7-2ddd93ad0e02.png)
+
 ### 2、全场景中文优化
+实现了应用的中文优化，让用户更好上手，方便的实现各个功能。
+
+![image](https://user-images.githubusercontent.com/82711644/143720837-21099514-ea7e-4f3e-804b-4078699b8207.png)
+
+![image](https://user-images.githubusercontent.com/82711644/143720841-d66f0d60-99db-45e8-bf8e-db06e7c2c332.png)
+
+![image](https://user-images.githubusercontent.com/82711644/143720853-a2f57c07-4323-4971-a21e-cf1ae39d6bf7.png)
+
+![image](https://user-images.githubusercontent.com/82711644/143720856-26f51b83-f36b-4891-a70e-a1a70ded899a.png)
+
+![image](https://user-images.githubusercontent.com/82711644/143720845-a4dade26-5697-4c27-b471-932a9170a458.png)
+
 ### 3、设置
+可以设置水印的添加以及通知的开启和关闭，还可以在帮助中，通过qq或者微信来进行联系。
+* 在list_options_menu中添加设置组件
+```
+<!--    设置-->
+    <item android:id="@+id/menu_setting_in"
+        android:title="@string/menu_setting"
+        android:alphabeticShortcut="se"/>
+```
+* 在NoteList类中的onOptionsItemSelected方法中添加跳转
+```
+case R.id.menu_setting_in:
+                //设置功能
+            Intent intent_setting = new Intent(this, NoteSetting.class);
+            this.startActivity(intent_setting);
+            return true;
+```
+* 在NoteSetting中实现设置功能
+```
+package com.example.android.notepad;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
+
+public class NoteSetting extends Activity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.note_setting);
+
+        //点击跳转到qq
+        TextView textView = findViewById((R.id.qq));
+        textView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent();
+                intent.setData(Uri.parse("https://im.qq.com/index"));
+                intent.setAction(Intent.ACTION_VIEW);
+                startActivity(intent);
+            }
+        });
+
+        //点击跳转到微信
+        TextView textView1 = findViewById(R.id.wechat);
+        textView1.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                Intent intent = new Intent();
+                intent.setData(Uri.parse("https://weixin.qq.com/"));
+                intent.setAction(Intent.ACTION_VIEW);
+                startActivity(intent);
+            }
+        });
+    }
+}
+```
+* 效果展示
+
+![image](https://user-images.githubusercontent.com/82711644/143721001-22b58093-6b5a-427e-a0dc-76db98b40c69.png)
+
+
 ## 三、待实现功能
+* 系统主题的修改，参考：
+
+![image](https://user-images.githubusercontent.com/82711644/143721094-e7f1bf61-bd42-466c-9dc1-5f7ebf180fac.png)
+
+* 根据不同的规则来进行不同的排列，参考：
+
+![image](https://user-images.githubusercontent.com/82711644/143721139-488962cc-c5ef-4731-8e82-89fb548b8a67.png)
+
 ## 四、参考链接
 * https://www.runoob.com/w3cnote/android-tutorial-menu.html
+* https://todo.microsoft.com/zh-cn/
+* https://blog.csdn.net/qq_41868108/article/details/106169825
 
 
