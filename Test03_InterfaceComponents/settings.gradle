@@ -1,2 +1,6 @@
+include ':actionmode_menus'
+include ':xml_menus'
+include ':customelayou_alertdialog'
+include ':uselistview'
 include ':app'
 rootProject.name = "Test03_InterfaceComponents"

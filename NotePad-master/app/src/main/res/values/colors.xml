@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red_bac">#ff0000</color>
+    <color name="whire_bac">#FFFFFF</color>
+    <color name="theme_cambridge_blue">#abd5ff</color>
+    <color name="theme_white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
