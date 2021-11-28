@@ -262,6 +262,39 @@ getListView().setDivider(null);//去除下划线
 
 ### 2、全场景中文优化
 实现了应用的中文优化，让用户更好上手，方便的实现各个功能。
+* 在string文件中进行修改
+```
+<resources>
+    <string name="app_name">NotePad</string>
+    <string name="live_folder_name">Notes</string>
+
+    <string name="title_edit_title">笔记标题</string>
+    <string name="title_create">新建笔记</string>
+    <string name="title_edit">Edit: %1$s</string>
+    <string name="title_notes_list">笔记</string>
+
+    <string name="menu_add">新建</string>
+    <string name="menu_save">保存</string>
+    <string name="menu_delete">删除</string>
+    <string name="menu_open">打开</string>
+    <string name="menu_revert">还原更改</string>
+    <string name="menu_copy">复制</string>
+    <string name="menu_paste">粘贴</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_setting">设置</string>
+    <string name="menu_background">更改主题</string>
+
+    <string name="button_ok">OK</string>
+    <string name="text_title">标题：</string>
+    <string name="resolve_edit">编辑笔记</string>
+    <string name="resolve_title">编辑标题</string>
+
+    <string name="error_title">错误</string>
+    <string name="error_message">加载错误</string>
+    <string name="nothing_to_save">There is nothing to save</string>
+</resources>
+```
+* 效果展示
 
 ![image](https://user-images.githubusercontent.com/82711644/143720837-21099514-ea7e-4f3e-804b-4078699b8207.png)
 
