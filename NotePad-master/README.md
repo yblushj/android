@@ -51,7 +51,7 @@
 ![image](https://user-images.githubusercontent.com/82711644/143720349-d677bc1b-bf32-40c4-8eea-4bc53ab0d019.png)
 
 ### 2、笔记内容搜索功能
-* 在menu下的notelist_item中添加搜索组件
+* 在menu下的list_options_menu中添加搜索组件
 ```
 <!--    搜索按钮-->
     <item
