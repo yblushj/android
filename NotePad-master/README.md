@@ -200,6 +200,55 @@ public class NoteSearch extends Activity implements SearchView.OnQueryTextListen
 
 ## 二、拓展功能
 ### 1、UI美化
+* 添加text_border文件，编辑新的背景
+```
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ABD5FF">浅蓝色</solid>
+    <corners android:radius="15px"/>
+</shape>
+```
+* 在notelist_item的LinearLayout中修改布局
+```    
+<!--修改后的-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/text_border"
+        android:orientation="vertical">
+        <!--    笔记的标题-->
+        <TextView
+            android:id="@android:id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <!--    笔记的修改时间-->
+        <TextView
+            android:id="@android:id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textSize="15dp" />
+    </LinearLayout>
+</LinearLayout>
+```
+* 在NoteList中设置去除ListLayout的下划线
+```
+getListView().setDivider(null);//去除下划线
+```
 * 界面展示美化
 
 ![image](https://user-images.githubusercontent.com/82711644/143720755-6ce63009-ca49-4352-bff6-e2bfb9fdb076.png)
