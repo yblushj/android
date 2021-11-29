@@ -294,7 +294,6 @@ public class NotesList extends ListActivity {
           return true;
         case R.id.menu_search:
             //查找功能
-            //startActivity(new Intent(Intent.ACTION_SEARCH, getIntent().getData()));
             Intent intent = new Intent(this, NoteSearch.class);
             this.startActivity(intent);
             return true;

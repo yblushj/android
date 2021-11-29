@@ -13,7 +13,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
 <resources>
     <string name="app_name">NotePad</string>
     <string name="live_folder_name">Notes</string>
@@ -42,7 +41,4 @@
     <string name="error_title">错误</string>
     <string name="error_message">加载错误</string>
     <string name="nothing_to_save">There is nothing to save</string>
-
-
-
 </resources>

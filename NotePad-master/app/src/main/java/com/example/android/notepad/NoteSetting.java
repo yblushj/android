@@ -36,7 +36,5 @@ public class NoteSetting extends Activity {
                 startActivity(intent);
             }
         });
-
-
     }
 }

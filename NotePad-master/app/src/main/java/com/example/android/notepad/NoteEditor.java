@@ -527,7 +527,6 @@ public class NoteEditor extends Activity {
      * @param title The new note title to use
      */
     private final void updateNote(String text, String title) {
-
         // Sets up a map to contain values to be updated in the provider.
         //获取系统时间，动态改变
         ContentValues values = new ContentValues();

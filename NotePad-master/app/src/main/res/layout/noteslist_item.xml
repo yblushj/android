@@ -42,8 +42,6 @@
         android:background="@drawable/text_border"
         android:orientation="vertical">
         <!--    笔记的标题-->
-        <!--    笔记的修改时间-->
-
         <TextView
             android:id="@android:id/text1"
             android:layout_width="match_parent"
@@ -52,15 +50,13 @@
             android:paddingLeft="5dip"
             android:singleLine="true"
             android:textAppearance="?android:attr/textAppearanceLarge" />
-
+        <!--    笔记的修改时间-->
         <TextView
             android:id="@android:id/text2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:paddingLeft="5dp"
-            android:singleLine="true"
-            android:textAppearance="?android:attr/textAppearanceLarge"
             android:textSize="15dp" />
     </LinearLayout>
 </LinearLayout>
