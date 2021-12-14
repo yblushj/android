@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="fragments.HomeFragment"
+        android:label="首页"
+        tools:layout="@layout/home_fragment" />
+    <fragment
+        android:id="@+id/navigation_recipe"
+        android:name="fragments.RecipeFragment"
+        android:label="菜谱"
+        tools:layout="@layout/recipe_fragment" />
+    <fragment
+        android:id="@+id/navigation_collect"
+        android:name="fragments.CollectFragment"
+        android:label="收藏"
+        tools:layout="@layout/collect_fragment" />
+    <fragment
+        android:id="@+id/navigation_my"
+        android:name="fragments.MyFragment"
+        android:label="我的"
+        tools:layout="@layout/my_fragment" />
+</navigation>
