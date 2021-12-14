@@ -11,9 +11,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/actionmode_menus" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/customelayou_alertdialog" />
+            <option value="$PROJECT_DIR$/part_two" />
             <option value="$PROJECT_DIR$/uselistview" />
             <option value="$PROJECT_DIR$/xml_menus" />
           </set>
