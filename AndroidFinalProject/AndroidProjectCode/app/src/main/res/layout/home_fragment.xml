@@ -1,87 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="fragments.HomeFragment">
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context="fragments.HomeFragment">-->
 
-<!--    // 实现顶部导航栏切换-->
-<!--    <androidx.viewpager.widget.ViewPager-->
-<!--        android:id="@+id/view_pager"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:layout_gravity="center_vertical">-->
-<!--        <androidx.viewpager.widget.PagerTitleStrip-->
-<!--            android:id="@+id/pagertitle"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_gravity="top"-->
-<!--            android:textColor="@color/red"-->
-<!--            android:layout_height="wrap_content" />-->
-<!--    </androidx.viewpager.widget.ViewPager>-->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/LinearLayout1"
+
+<!--</FrameLayout>-->
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:tabSelectedTextColor="@color/theme_color"
+        app:tabIndicatorColor="@color/theme_color"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="5dp"
+        app:tabIndicator="@drawable/tablayout_indicator"
+        >
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:id="@+id/container"/>
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:background="#FFFFFF">
+</LinearLayout>
 
-            <TextView
-                android:id="@+id/title_one"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textSize="17sp"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="热榜"
-                android:textColor="@color/gray" />
-
-            <TextView
-                android:id="@+id/title_two"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textSize="17sp"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="关注"
-                android:textColor="@color/gray" />
-
-            <TextView
-                android:id="@+id/title_three"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:textSize="17sp"
-                android:layout_weight="1.0"
-                android:gravity="center"
-                android:text="分类"
-                android:textColor="@color/gray" />
-        </LinearLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:background="@color/white"
-            android:layout_height="4dp"
-            >
-            <View
-                android:id="@+id/slider"
-                android:background="@color/theme_color"
-                android:layout_width="32dp"
-                android:layout_height="fill_parent"
-                />
-        </RelativeLayout>
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/viewpager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_weight="1.0"
-            android:flipInterval="30"
-            android:persistentDrawingCache="animation" />
-
-    </LinearLayout>
-</FrameLayout>

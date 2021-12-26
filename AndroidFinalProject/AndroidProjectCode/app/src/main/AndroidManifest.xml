@@ -17,7 +17,43 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".ViewPage"/>
+
+        <activity
+            android:label="搜索"
+            android:name=".SearchActivity" />
+
+        <activity
+            android:label="设置"
+            android:name=".SettingActivity" />
+
+        <activity
+            android:label="关注"
+            android:name=".AttentionActivity"/>
+
+        <activity
+            android:label="粉丝"
+            android:name=".FansActivity"/>
+
+        <activity
+            android:label="赞和收藏"
+            android:name=".StarActivity"/>
+
+        <activity
+            android:label="动态"
+            android:name=".TrendsActivity"/>
+
+        <activity
+            android:label="新建"
+            android:name=".RecipeAddActivity" />
+        
+        <activity
+            android:label="新建菜谱"
+            android:name=".AddRecipeActiviey"/>
+
+        <activity
+            android:label="新建动态"
+            android:name=".AddTrendsActivity"/>
+
     </application>
 
 </manifest>

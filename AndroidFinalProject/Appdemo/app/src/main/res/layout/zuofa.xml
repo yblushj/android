@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical" 
+  android:background="#ffffcc"
+  >
+  
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"
+        >
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="详细做法"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:lineSpacingExtra="5dp"
+          >
+          </TextView>
+          <LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical" 
+  android:paddingTop="3dp"
+  android:paddingBottom="5dp" 
+      >
+    <View  
+   android:layout_width="fill_parent"  
+    android:layout_height="0.01dip" 
+   android:background="#000000"  
+   />
+  </LinearLayout>
+       
+        <ScrollView 
+         android:id="@+id/sv_tushu"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" >
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp"
+        >
+      <TextView
+         android:id="@+id/textview5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="海鲜\n 准备调料\n \t食谱调料：虾、蒜薹、洋葱  \t\n \t调料：花椒、大料、桂皮、葱姜蒜、豆瓣、料酒、盐、糖、鸡精、胡椒粉\n
+ 具体步骤\n \t1、虾去头去壳洗净，背部用刀片开，用盐、料酒腌10分钟，蒜薹洗净切断，洋葱洗净切丝\n \t2、锅中水烧开，将蒜薹下锅焯水，水开后捞出备用\n \t3、锅中烧油，将花椒下锅炸香捞出，炒香大料、桂皮
+ \t4、再炒葱姜蒜，转小火炒豆瓣，将虾仁下锅\n \t5、再将蒜薹和洋葱下锅炒，炒至洋葱断生，加盐、糖、鸡精和胡椒粉\n \t6、将调味料翻匀即可出锅"
+ 
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:lineSpacingExtra="5dp"
+          >
+       
+          </TextView>
+         </LinearLayout>
+         </ScrollView>
+      
+    </LinearLayout>
+    
+    
+</LinearLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical" 
+  android:background="#ffffcc"
+  >
+  
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="132dp"
+        android:orientation="vertical"
+        android:paddingTop="8dp" >
+    
+        <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="我的"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:lineSpacingExtra="5dp"
+          >
+          </TextView>
+          <LinearLayout
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical" 
+  android:paddingTop="3dp"
+  android:paddingBottom="5dp" 
+      >
+    <View  
+   android:layout_width="fill_parent"  
+    android:layout_height="0.01dip" 
+   android:background="#ff0000"  
+   />
+  </LinearLayout>
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wode" />
+        
+        <ScrollView 
+         android:id="@+id/sv_tushu"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" >
+         <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="15dp"
+        >
+      
+          
+         </LinearLayout>
+         </ScrollView>
+      
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="103dp"
+        android:layout_height="120dp"
+        android:background="@drawable/touxiang" 
+        />
+        
+    <Button
+        android:id="@+id/textView1"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:text="点击登录"
+        android:textColor="#4A0C57"
+        android:textSize="17sp" />
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="461dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+         <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textColor="#4A0C57"
+            android:textSize="17sp" />
+         
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="性别"
+            android:textColor="#4A0C57"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="职业" 
+            android:textColor="#4A0C57"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="个性签名"
+            android:textColor="#4A0C57"
+            android:textSize="17sp" />
+          <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="我的收藏"
+            android:textColor="#4A0C57"
+            android:textSize="17sp" />
+   
+     
+        </LinearLayout>
+    
+</LinearLayout>

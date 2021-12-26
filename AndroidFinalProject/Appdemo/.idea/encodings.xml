@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/appdemo/MainActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/appdemo/MainFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/appdemo/MaindoingActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/appdemo/MeFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/appdemo/VegetablesFragment.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/appdemo/VegetablesTypeActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/appdemo/doingActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/appdemo/findpwdActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/appdemo/loginActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/appdemo/registerActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/appdemo/repwdActivity.java" charset="GBK" />
+  </component>
+</project>

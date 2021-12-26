@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="huaweuapp_width">
+<!--        华为手机适配-->
+        <item name="android:layout_width">328dp</item>
+    </style>
+    <style name="app_width">
+        <!--        手机适配-->
+        <item name="android:layout_width">360dp</item>
+    </style>
+
+</resources>

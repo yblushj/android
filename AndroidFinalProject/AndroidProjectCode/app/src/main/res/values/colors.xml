@@ -10,4 +10,6 @@
     <color name="red">#F44336</color>
     <color name="theme_color">#facc31</color>
     <color name="gray">#ACA7A7</color>
+
+    <color name="add_recipe_trends">#3CFAE631</color>
 </resources>

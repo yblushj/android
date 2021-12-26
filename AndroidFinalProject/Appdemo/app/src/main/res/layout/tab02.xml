@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/title_bar">
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="132dp"
+        android:orientation="vertical"
+        android:paddingTop="0dp" >
+    
+         
+
+        <ImageButton
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/wode" />
+        
+       
+      
+    </LinearLayout>
+<ScrollView
+         android:id="@+id/sv_tushu"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" >
+        
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+         >
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp"
+        android:hint="我的头像"
+        android:background="@drawable/touxiang" 
+        />
+     
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+    <Button
+        
+        android:id="@+id/loginorregister"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="点击登录"
+         android:background="@drawable/yellow_background" 
+        android:textSize="15sp" />
+    
+    <Button
+        
+        android:id="@+id/repwd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="修改密码"
+         android:background="@drawable/yellow_background" 
+        android:textSize="15sp" />
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+         <TextView
+            android:id="@+id/nicheng"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="昵称："
+            android:textColor="#4A0C57"
+            android:textSize="17sp" />
+         
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="性别：男"
+            android:textColor="#4A0C57"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="职业：程序猿" 
+            android:textColor="#4A0C57"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="个性签名：呵呵呵"
+            android:textColor="#4A0C57"
+            android:textSize="17sp" />
+          <TextView
+            android:id="@+id/textView4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="我的收藏：未知"
+            android:textColor="#4A0C57"
+            android:textSize="17sp" />
+    
+          
+     
+        </LinearLayout>
+        <Button
+        
+        android:id="@+id/zuxiao"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="注销"
+         android:background="@drawable/yellow_background" 
+        android:textSize="15sp" />
+        </LinearLayout>
+</ScrollView>
+</LinearLayout>
