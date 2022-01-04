@@ -23,6 +23,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.example.xiaocaiyidie.AddRecipeActiviey;
+import com.example.xiaocaiyidie.AddTrendsActivity;
 import com.example.xiaocaiyidie.MainActivity;
 import com.example.xiaocaiyidie.R;
 import com.example.xiaocaiyidie.SearchActivity;
@@ -40,7 +42,7 @@ public class HomeFragment extends Fragment {
     private List<TabFragment> fragmentList;
     private TabLayout tabLayout;
     private List<String> mTitles;
-    private String [] title={"关注","推荐","分类"};
+    private String [] title={"推荐","直播","分类"};
 
     // 设置菜单内容
     private static final int FONT_10 = 0x111;
@@ -98,6 +100,14 @@ public class HomeFragment extends Fragment {
                 break;
             case R.id.actionbar_share:
                 Toast.makeText(getActivity(), "点击了分享", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.recipe_add_ricipe:
+                Intent intent3 = new Intent(getActivity(), AddRecipeActiviey.class);
+                startActivity(intent3);
+                break;
+            case R.id.recipe_add_trends:
+                Intent intent4 = new Intent(getActivity(), AddTrendsActivity.class);
+                startActivity(intent4);
                 break;
             default:
                 break;

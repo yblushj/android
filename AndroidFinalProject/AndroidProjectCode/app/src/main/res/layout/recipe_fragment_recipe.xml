@@ -1,10 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="我是菜谱界面"/>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    style="@style/app_width"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="200dp">
+    <ListView
+        android:layout_marginTop="10dp"
+        android:id="@+id/recipe_recipe_list"
+        android:listSelector="#00FFFFFF"
+        style="@style/app_width"
+        android:divider="#00FFFFFF"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="match_parent"
+        android:scrollbars="none"/>
 </LinearLayout>

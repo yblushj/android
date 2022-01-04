@@ -7,10 +7,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
@@ -20,11 +22,13 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+
 public class SearchActivity extends AppCompatActivity {
 
+    private String[] mDatas = {"花生酪", "巧克力曲奇","水果沙拉","芥香虾球","麻辣虾尾","家庭版佛跳墙","红烧鱼块","青椒白玉菇炒鸡蛋","干锅菜花"};
     ListView listView;
-    SQLiteDatabase sqLiteDatabase;
     private ActionBar actionBar;
+    private String info; // 获取输入框的内容
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,9 +41,77 @@ public class SearchActivity extends AppCompatActivity {
 
         //获取搜索实例
         SearchView searchView = findViewById(R.id.search_view);
-        Intent intent = getIntent();
+        //Intent intent = getIntent();
         listView = findViewById(R.id.list_view);
+        listView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, mDatas));
+        listView.setTextFilterEnabled(true);
         //sqLiteDatabase = new NotePadProvider.DatabaseHelper(this).getReadableDatabase();
+        // 设置搜索文本监听
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            // 当点击搜索按钮时触发该方法
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                if (info.equals("花生酪")) {
+                    Intent intent = new Intent(SearchActivity.this, RecipeDeatils.class);
+                    intent.putExtra("name", "花生酪");
+                    startActivity(intent);
+                }
+                if (info.equals("巧克力曲奇")) {
+                    Intent intent = new Intent(SearchActivity.this, RecipeDeatils.class);
+                    intent.putExtra("name", "巧克力曲奇");
+                    startActivity(intent);
+                }
+                if (info.equals("水果沙拉")) {
+                    Intent intent = new Intent(SearchActivity.this, RecipeDeatils.class);
+                    intent.putExtra("name", "水果沙拉");
+                    startActivity(intent);
+                }
+                if (info.equals("芥香虾球")) {
+                    Intent intent = new Intent(SearchActivity.this, RecipeDeatils.class);
+                    intent.putExtra("name", "芥香虾球");
+                    startActivity(intent);
+                }
+                if (info.equals("麻辣虾尾")) {
+                    Intent intent = new Intent(SearchActivity.this, RecipeDeatils.class);
+                    intent.putExtra("name", "麻辣虾尾");
+                    startActivity(intent);
+                }
+                if (info.equals("家庭版佛跳墙")) {
+                    Intent intent = new Intent(SearchActivity.this, RecipeDeatils.class);
+                    intent.putExtra("name", "家庭版佛跳墙");
+                    startActivity(intent);
+                }
+                if (info.equals("红烧鱼块")) {
+                    Intent intent = new Intent(SearchActivity.this, RecipeDeatils.class);
+                    intent.putExtra("name", "红烧鱼块");
+                    startActivity(intent);
+                }
+                if (info.equals("青椒白玉菇炒鸡蛋")) {
+                    Intent intent = new Intent(SearchActivity.this, RecipeDeatils.class);
+                    intent.putExtra("name", "青椒白玉菇炒鸡蛋");
+                    startActivity(intent);
+                }
+                if (info.equals("干锅菜花")) {
+                    Intent intent = new Intent(SearchActivity.this, RecipeDeatils.class);
+                    intent.putExtra("name", "干锅菜花");
+                    startActivity(intent);
+                }
+
+                return false;
+            }
+
+            // 当搜索内容改变时触发该方法
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                if (!TextUtils.isEmpty(newText)){
+                    listView.setFilterText(newText);
+                    info = newText;
+                }else{
+                    listView.clearTextFilter();
+                }
+                return false;
+            }
+        });
 
         //设置该SearchView显示搜索按钮
         searchView.setSubmitButtonEnabled(true);
@@ -91,4 +163,5 @@ public class SearchActivity extends AppCompatActivity {
             window.setStatusBarColor(activity.getResources().getColor(colorId));
         }
     }
+
 }

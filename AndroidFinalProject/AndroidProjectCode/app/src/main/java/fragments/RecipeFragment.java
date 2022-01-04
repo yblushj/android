@@ -2,12 +2,16 @@ package fragments;
 
 import androidx.lifecycle.ViewModelProvider;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.localbroadcastmanager.content.LocalBroadcastManager;
 import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
@@ -17,9 +21,14 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.SimpleAdapter;
 import android.widget.Toast;
+import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.example.xiaocaiyidie.AddRecipeActiviey;
+import com.example.xiaocaiyidie.AddTrendsActivity;
 import com.example.xiaocaiyidie.R;
 import com.example.xiaocaiyidie.RecipeAddActivity;
 import com.example.xiaocaiyidie.SearchActivity;
@@ -27,9 +36,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class RecipeFragment extends Fragment {
+    // 创建分页导航
     private ViewPager pager;
     private TabFragment.FragmentAdapter fragmentAdapter;
     private List<TabFragment> fragmentList;
@@ -43,6 +55,7 @@ public class RecipeFragment extends Fragment {
         pager = view.findViewById(R.id.recipe_pager);
         tabLayout = view.findViewById(R.id.recipt_tabs);
         setHasOptionsMenu(true);
+
         return view;
     }
 
@@ -83,19 +96,18 @@ public class RecipeFragment extends Fragment {
                 startActivity(intent);
                 break;
             case R.id.recipe_add_ricipe:
-                Intent intent1 = new Intent();
-                intent1.setAction("android.media.action.IMAGE_CAPTURE");
-                //通过addCategory设置类别为"android.intent.category.DEFAULT"
-                intent1.addCategory("android.intent.category.DEFAULT");
+                Intent intent1 = new Intent(getActivity(), AddRecipeActiviey.class);
                 startActivity(intent1);
                 break;
             case R.id.recipe_add_trends:
-                Toast.makeText(getActivity(), "点击了分享", Toast.LENGTH_SHORT).show();
+                Intent intent2 = new Intent(getActivity(), AddTrendsActivity.class);
+                startActivity(intent2);
                 break;
             default:
                 break;
         }
         return true;
     }
+
 
 }

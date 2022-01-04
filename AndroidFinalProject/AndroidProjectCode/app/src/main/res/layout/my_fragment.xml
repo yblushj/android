@@ -29,7 +29,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="吃饭的小骷髅"
+                android:text="吃萝卜的小奶虎"
                 android:layout_marginLeft="50dp"
                 android:textSize="25sp"
                 android:textColor="@color/black"
@@ -50,7 +50,7 @@
             android:hint="添加你的个人描述，让厨友更加了解你"/>
 
         <LinearLayout
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:orientation="horizontal"
@@ -89,7 +89,7 @@
                     android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="23"/>
+                    android:text="99+"/>
                 <TextView
                     android:textColor="@color/black"
                     android:layout_width="wrap_content"
@@ -107,7 +107,7 @@
                     android:textColor="@color/black"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="23"/>
+                    android:text="99+"/>
                 <TextView
                     android:textColor="@color/black"
                     android:layout_width="wrap_content"
@@ -126,7 +126,7 @@
                     android:layout_marginRight="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="23"/>
+                    android:text="7"/>
                 <TextView
                     android:textColor="@color/black"
                     android:layout_marginRight="10dp"

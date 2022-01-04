@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageButton
+        android:layout_marginBottom="20dp"
+        android:id="@+id/my_function_headimage"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/head"
+        android:scaleType="centerCrop"
+        android:background="#00FFFFFF"/>
+    <LinearLayout
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/my_function_username"
+            android:textSize="17sp"
+            android:textColor="@color/text_hui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"/>
+        <TextView
+            android:id="@+id/my_function_usermiaoshu"
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个人描述"/>
+    </LinearLayout>
+</LinearLayout>
+

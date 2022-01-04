@@ -2,12 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="我是关注页面"/>
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/add_new_live"
+        android:layout_marginTop="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="点击我"/>
+        android:text="点我去直播"
+        android:background="@color/theme_color"/>
+    <Button
+        android:id="@+id/add_new_watch_live"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="点我看直播"
+        android:background="@color/theme_color"/>
 </LinearLayout>
